@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PaisesService {
 
-  private API_SERVER = "http://localhost:8080/pais/";
+  private API_SERVER = "http://aplicacion-ibm-oc-frontend-git:8080/pais/";
 
   constructor(
     private httpClient: HttpClient

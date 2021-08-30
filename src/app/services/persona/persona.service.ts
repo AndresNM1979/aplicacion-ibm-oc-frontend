@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PersonaService {
-  private API_SERVER = "http://localhost:8080/personas/";
+  private API_SERVER = "http://aplicacion-ibm-oc-frontend-git:8080/personas/";
 
   constructor(private httpClient: HttpClient) { }
 
