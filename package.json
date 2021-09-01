@@ -2,8 +2,7 @@
   "name": "personafront",
   "version": "0.0.0",
   "scripts": {
-    "ng": "npx ng",
-    "start": "npx ng serve",
+    "ng": "ng",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
