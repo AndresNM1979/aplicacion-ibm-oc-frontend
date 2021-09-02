@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "index.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
