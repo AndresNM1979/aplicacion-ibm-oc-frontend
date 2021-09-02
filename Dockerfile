@@ -1,6 +1,6 @@
 FROM node:12-alpine as builder
 
-COPY packe.json .
+COPY package.json .
 
 RUN npm install -g @angular/cli@11.2.12
 RUN npm i
