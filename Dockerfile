@@ -10,6 +10,6 @@ COPY src ./src
 COPY angular.json .
 COPY tsconfig.json .
 COPY tsconfig.app.json .
-COPY tsclint.json .
+COPY tslint.json .
 
-RUN ng build --configuration
+RUN ng build --prod
