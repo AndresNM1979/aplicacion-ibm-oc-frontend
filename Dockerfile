@@ -12,4 +12,4 @@ COPY tsconfig.json .
 COPY tsconfig.app.json .
 COPY tsclint.json .
 
-RUN ng build --congiguration
+RUN ng build --configuration
