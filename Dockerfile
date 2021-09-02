@@ -1,7 +1,5 @@
 FROM node:12-alpine as builder
 
-WORDIR /home/node/aap/
-
 COPY packe.json .
 
 RUN npm install -g @angular/cli@11.2.12
