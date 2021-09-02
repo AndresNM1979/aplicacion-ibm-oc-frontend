@@ -2,8 +2,8 @@ FROM node:12-alpine as builder
 
 COPY package.json .
 
-RUN npm install -g @angular/cli@11.2.12
-RUN npm i
+RUN npm install i -g @angular/cli@latest
+
 COPY src ./src
 COPY angular.json .
 COPY tsconfig.json .
