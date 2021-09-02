@@ -10,4 +10,4 @@ COPY tsconfig.json .
 COPY tsconfig.app.json .
 COPY tslint.json .
 
-RUN ng build --prod
+#RUN ng build --prod
