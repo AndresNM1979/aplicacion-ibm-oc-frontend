@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "ng": "ng",
     "start": "ng main.ts",
     "build": "ng build",
     "test": "ng test",
