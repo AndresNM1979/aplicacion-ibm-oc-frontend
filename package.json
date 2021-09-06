@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
    "scripts": {
-    "build:watch": "tsc -p src/ -w",
-    "serve": "lite-server -c=bs-config.json",
-    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
