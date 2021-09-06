@@ -3,13 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "ng": "ng",
-    "start": "ng main.ts",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+    "build.dev": "gulp build.dev",
+    "build.dev.watch": "gulp build.dev.watch",
+    "build.prod": "gulp build.prod --env prod",
+    "build.test": "gulp build.test",
+    "build.test.watch": "gulp build.test.watch",
+    "docs": "npm run gulp -- build.docs && npm run gulp -- serve.docs",
+    "gulp": "gulp",
+    "karma": "karma",
+    "karma.start": "karma start",
+    "lint": "gulp tslint",
+    "postinstall": "tsd reinstall --clean && tsd link && tsd rebundle && gulp check.versions && gulp postinstall",
+    "reinstall": "rimraf node_modules && npm cache clean && npm install",
+    "start": "gulp serve --env dev",
+    "serve.dev": "gulp serve --env dev",
+    "tasks.list": "gulp --tasks-simple",
+    "test": "gulp test",
+    "tsd": "tsd"
+  }
   "dependencies": {
     "@angular/animations": "~9.1.11",
     "@angular/common": "~9.1.11",
